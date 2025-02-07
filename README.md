@@ -1,9 +1,14 @@
 Netflix GPT
     - Setup app using Vite
     - Configure Tailwind
+    - Routing of App
     - Header
     - Login Form
     - SignIn form
+    - Form Validation
+        -  Basic checks using useRef and regex validate.js
+    
+    - useRef Hook
     
 
 
