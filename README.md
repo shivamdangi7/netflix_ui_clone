@@ -1,6 +1,10 @@
 Netflix GPT
-    * Setup app using Vite
-    * Configure Tailwind
+    - Setup app using Vite
+    - Configure Tailwind
+    - Header
+    - Login Form
+    - SignIn form
+    
 
 
 

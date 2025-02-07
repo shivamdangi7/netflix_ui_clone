@@ -1,10 +1,11 @@
 import './App.css'
+import Body from './components/Body'
 
 function App() {
 
   return (
     <>
-      <h1 className='text-3xl font-black text-yellow-200'>" Hello how are you ?"</h1>
+    <Body />
     </>
   )
 }
