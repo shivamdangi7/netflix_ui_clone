@@ -9,3 +9,11 @@ export const API_OPTIONS = {
     Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzZWU0OWYyZjNkYzBlYmExMjBiOTQ4MTg5ZWVmNWUxZiIsIm5iZiI6MTczOTE5NDk3Ni44ODUsInN1YiI6IjY3YWEwMjYwMmM2ZTIyODk3ZjA2MGJiNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.C2Bakq86OJIioizk6eVhWpqgEaIIDdAXclKKoM7tink'
   }
 }; 
+
+export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";
+
+export const SUPPORTED_LANGUAGES = [
+  { identifier: "en", name: "English" },
+  { identifier: "hindi", name: "Hindi" },
+  { identifier: "spanish", name: "Spanish" },
+];

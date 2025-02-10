@@ -1,55 +1,78 @@
-Netflix GPT
-    - Setup app using Vite
-    - Configure Tailwind
-    - Routing of App
-    - Header
-    - Login Form
-    - SignIn form
-    - Form Validation(signin/signup)
-        -  Basic checks using useRef and regex validate.js
-        -  useRef Hook
-    - Authentication
-        - firebase setup
-        - firebase signin/signup check
-    - Deploying app to prod through firebase
-    - RTK reduxjstoolkit reactredux
-        - for managing user
-    - Create SignUp user Account
-    - Implement SignIn user API
-    - Created Redux Store with userSlice
-    - Implemented SignOut
-    - Update Profile 
-    - BugFIx : SignUp user displayName and profile picture update
-    - BugFix : if user not login redirect it to /browse or to loginpage
-    - Unsubscribe to onAuthStateChanged callback
-    - Regiter TMDB API & create an app & get access token 
-    - Get Data from TMDB now playing movies list API
-    Custom Hook for Now Playing Movies
-    - Create movieSlice
-    - Update Store with movies Data
-    - Planning for MainContaviner & secondary container
-    - Fetch Data for Trailer Video
-    - Update Store with Trailer Video Data
-    - Embedded the Yotube video and make it autoplay and mute Tailwind Classes in the Main Container
-    
+# Netflix UI Clone
 
+A Netflix interface clone built using React, Redux, and Firebase.
 
-     
-    
+## Features
 
+### Authentication
+- Login/Sign Up functionality
+- Sign In/Sign up Form
+- Protected routes with authentication
+- Redirect to Browse Page after authentication
 
+### Browse Page (Authenticated)
+- Header with navigation
+- Main Movie Showcase
+  - Auto-playing trailer in background
+  - Title & Description
+  - Movie Suggestions
+  - Multiple Movie Lists by category
 
-# Features
-- Login/Sign Up
-    - Sign In /Sign up Form
-    - redirect to Browse Page
-- Browse (after authentication)
-    - Header
-    - Main Movie
-        - Tailer in Background
-        - Title & Description
-        - MovieSuggestions
-            - MovieLists * N
-- NetflixGPT
-    - Search Bar
-    - Movie Suggestions
+### Movie Discovery
+- Search Bar
+- Movie Suggestions
+
+## Technical Implementation
+
+### Setup & Configuration
+- App initialization using Vite
+- Tailwind CSS configuration
+- React Router setup
+
+### Authentication & User Management
+- Firebase setup and integration
+- User authentication (sign in/sign up)
+- Form validation using useRef and regex
+- Redux implementation using Redux Toolkit
+  - User state management
+  - Profile updates
+  - Authentication state handling
+
+### API Integration
+- TMDB API integration
+  - Now playing movies list
+  - Movie trailer data
+- Custom hooks for data fetching
+
+### Components
+- Main Container
+  - YouTube video integration
+  - Autoplay and mute functionality
+- Secondary Container
+  - Movie suggestions layout
+  - Movie lists
+
+### State Management
+- Redux store configuration
+- Movie slice implementation
+- User slice implementation
+
+### Bug Fixes
+- Sign Up user displayName and profile picture update
+- Authentication redirect handling
+- Memory leak prevention (unsubscribe from auth state)
+
+## Development Progress
+- ✅ Basic app setup
+- ✅ Authentication implementation
+- ✅ Redux store configuration
+- ✅ TMDB API integration
+- ✅ Main container development
+- 🚧 Movie discovery features (in progress)
+
+## Technologies Used
+- React
+- Redux Toolkit
+- Firebase
+- Tailwind CSS
+- TMDB API
