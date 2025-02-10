@@ -5,10 +5,23 @@ Netflix GPT
     - Header
     - Login Form
     - SignIn form
-    - Form Validation
+    - Form Validation(signin/signup)
         -  Basic checks using useRef and regex validate.js
-    
-    - useRef Hook
+        -  useRef Hook
+    - Authentication
+        - firebase setup
+        - firebase signin/signup check
+    - Deploying app to prod through firebase
+    - RTK ❯ npm i -D @reduxjs/toolkit , ❯ npm i react-redux
+        - for managing user
+    - Create SignUp user Account
+    - Implement SignIn user API
+    - Created Redux Store with userSlice
+    - Implemented SignOut
+    - Update Profile 
+    - Fetch Movies from TMDB 
+
+     
     
 
 

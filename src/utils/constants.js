@@ -1,0 +1,1 @@
+export const FIREBASE = import.meta.env.VITE_FIREBASE_API;
