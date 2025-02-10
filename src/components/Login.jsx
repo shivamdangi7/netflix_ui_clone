@@ -3,14 +3,13 @@ import { createUserWithEmailAndPassword , signInWithEmailAndPassword, updateProf
 import Header from "./Header"
 import { useRef, useState } from "react";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { USER_AVATAR } from "../utils/constants";
 
 function login() {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMsg , setErrorMsg] = useState(null);
-  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const toggleSignInForm=() => {
@@ -36,12 +35,12 @@ function login() {
         // Signed up 
         const user = userCredential.user;
         updateProfile(user, {
-          displayName: name.current.value , photoURL : "https://avatars.githubusercontent.com/u/95694432?v=4://example.com/jane-q-user/profile.jpg",
+          displayName: name.current.value,
+          photoURL: USER_AVATAR,
         })
         .then(() => {
           const {uid, email , displayName , photoURL} = auth.currentUser;  
           dispatch(addUser({uid:uid , email:email , displayName: displayName , photoURL: photoURL}));
-          navigate("/browse")  
         })
         .catch((error) => {
           // An error occurred
@@ -62,8 +61,6 @@ function login() {
       .then((userCredential) => {
         // Signed in 
         const user = userCredential.user;
-        console.log(user)
-        navigate("/browse") 
         // ...
       })
       .catch((error) => {
